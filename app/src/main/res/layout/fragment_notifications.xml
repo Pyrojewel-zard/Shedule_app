@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:openxu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/frame_1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clipToOutline="true"
+            android:background="@drawable/frame_1">
+
+            <TextView
+                android:id="@+id/timeline"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal|top"
+                android:text="@string/timeline"
+                android:textAppearance="@style/today" />
+        </RelativeLayout>
+        <com.example.myapplication.ui.notifications.CustomCalendar
+            android:id="@+id/cal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            openxu:mMonthRowL="@drawable/custom_calendar_row_left"
+            openxu:mMonthRowR="@drawable/custom_calendar_row_right"
+            openxu:mMonthRowSpac="20dip"
+
+            openxu:mTextSizeMonth="20sp"
+            openxu:mTextSizeWeek="17sp"
+            openxu:mTextSizeDay="17sp"
+            openxu:mTextSizePre="10sp"
+
+            openxu:mTextColorMonth="#4b4b4b"
+            openxu:mTextColorWeek="#9e9e9d"
+            openxu:mSelectWeekTextColor="#f67633"
+            openxu:mTextColorDay="#686768"
+            openxu:mTextColorPreFinish="#fc7451"
+            openxu:mTextColorPreUnFinish="#60ba8d"
+            openxu:mTextColorPreNull="#cecdcd"
+            openxu:mSelectTextColor="#ffffff"
+
+            openxu:mMonthSpac="10dip"
+            openxu:mLineSpac="12dip"
+            openxu:mTextSpac="8dip"
+
+            openxu:mCurrentBg="#6E6E6E"
+            openxu:mCurrentBgStrokeWidth="1.5dip"
+            openxu:mCurrentBgDashPath="@array/customCalendar_currentDay_bg_DashPath"
+            openxu:mSelectBg="#fe7f5c"
+            openxu:mSelectRadius="15dip" />
+
+
+        <RelativeLayout
+            android:id="@+id/frame_12"
+            android:layout_width="342dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35.0dp"
+            android:layout_marginTop="30dp"
+            android:clipToOutline="true">
+
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="129dp"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/line_2" />
+
+            <TextView
+                android:id="@+id/am"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/time1"
+                android:textAppearance="@style/time" />
+
+            <TextView
+                android:id="@+id/place1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="299dp"
+                android:layout_marginTop="43dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/place1"
+                android:textAppearance="@style/place" />
+
+            <TextView
+                android:id="@+id/course1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="34dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/course1"
+                android:textAppearance="@style/course" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/frame_13"
+            android:layout_width="342dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35.0dp"
+            android:layout_marginTop="30dp"
+            android:clipToOutline="true">
+
+            <View
+                android:id="@+id/line_3"
+                android:layout_width="129dp"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/line_2" />
+
+            <TextView
+                android:id="@+id/pm"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/time2"
+                android:textAppearance="@style/time" />
+
+            <TextView
+                android:id="@+id/place2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="299dp"
+                android:layout_marginTop="43dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/place2"
+                android:textAppearance="@style/place" />
+            <TextView
+                android:id="@+id/course2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="29dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="34dp"
+                android:text="@string/course2"
+                android:textAppearance="@style/course"
+                android:lineSpacingExtra="0sp"
+                android:gravity="top"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/frame_14"
+            android:layout_width="342dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35.0dp"
+            android:layout_marginTop="30dp"
+            android:clipToOutline="true">
+
+            <View
+                android:id="@+id/line_4"
+                android:layout_width="129dp"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/line_2" />
+
+            <TextView
+                android:id="@+id/pm2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/time3"
+                android:textAppearance="@style/time" />
+
+            <TextView
+                android:id="@+id/place3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="299dp"
+                android:layout_marginTop="43dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/place3"
+                android:textAppearance="@style/place" />
+            <TextView
+                android:id="@+id/course3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="29dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="34dp"
+                android:text="@string/course3"
+                android:textAppearance="@style/course"
+                android:lineSpacingExtra="0sp"
+                android:gravity="top"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
